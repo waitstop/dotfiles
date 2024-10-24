@@ -1,0 +1,46 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the bottom of your screen
+    "margin": "10 15 0 15",
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["wireplumber", "cpu", "memory", "tray", "clock"],
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "format": "{icon}",
+        "tooltip": false,
+        "all-outputs": true,
+        "format-icons": {
+          "active": "",
+          "default": ""
+        }
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% "
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "wireplumber": {
+        //"scroll-step": 1,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pwvucontrol"
+    },
+}
