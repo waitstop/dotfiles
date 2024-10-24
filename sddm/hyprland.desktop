@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Hyprland
+Comment=An intelligent dynamic tiling Wayland compositor
+Exec=/home/waitstop/dotfiles/hypr/start.sh
+Type=Application
