@@ -23,7 +23,7 @@ window#waybar {
   color: #b4befe;
 }
 
-#clock, #wireplumber, #cpu, #memory, #tray{
+#clock, #wireplumber,#bluetooth, #cpu, #memory, #tray{
   border-radius: 10px;
   background-color: #11111b;
   color: #cdd6f4;

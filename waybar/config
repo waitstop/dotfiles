@@ -3,7 +3,7 @@
     "position": "top", // Waybar at the bottom of your screen
     "margin": "10 15 0 15",
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wireplumber", "cpu", "memory", "tray", "clock"],
+    "modules-right": ["wireplumber", "bluetooth", "cpu", "memory", "tray", "clock"],
     "hyprland/workspaces": {
         "format": "{name}",
         "format": "{icon}",
@@ -43,4 +43,11 @@
         },
         "on-click": "pwvucontrol"
     },
+    "bluetooth": {
+        "format-on": "",
+        "format-disabled": "!",
+        "format-off": "!",
+        "format-connected": "",
+        "on-click": "blueberry"
+    }
 }
