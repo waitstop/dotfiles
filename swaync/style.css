@@ -105,6 +105,14 @@ slider {
   padding: 14px;
 }
 
+.control-center .widget-title {
+  margin-bottom: 10px;
+}
+
+.control-center .widget-dnd {
+  margin-bottom: 10px;
+}
+
 .control-center .widget-title > label {
   color: #cdd6f4;
   font-size: 1.3em;
@@ -308,7 +316,7 @@ slider {
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button label {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .widget-volume {

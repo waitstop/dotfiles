@@ -1,6 +1,6 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
-  "positionX": "center",
+  "positionX": "right",
   "positionY": "top",
   "layer": "overlay",
   "control-center-layer": "top",
@@ -47,29 +47,19 @@
       "app-name": "Spotify"
     }
   },
-  "widgets": [
-    "inhibitors",
-    "title",
-    "dnd",
-    "notifications"
-  ],
+  "widgets": ["title", "dnd", "mpris", "notifications"],
   "widget-config": {
-    "inhibitors": {
-      "text": "Inhibitors",
-      "button-text": "Clear All",
-      "clear-all-button": true
-    },
     "title": {
-      "text": "Notifications",
+      "text": "Уведомления",
       "clear-all-button": true,
-      "button-text": "Clear All"
+      "button-text": "Удалить всё"
     },
     "dnd": {
-      "text": "Do Not Disturb"
+      "text": "Не беспокоить"
     },
     "label": {
-      "max-lines": 5,
-      "text": "Label Text"
+      "max-lines": 3,
+      "text": "Уведомление"
     },
     "mpris": {
       "image-size": 96,
@@ -78,11 +68,16 @@
     "buttons-grid": {
       "actions": [
         {
-          "label": "直",
-          "type": "toggle",
-          "active": true,
-          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
-          "update_command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
+          "label": "󰕾",
+          "command": "pwvucontrol"
+        },
+        {
+          "label": "󰐥",
+          "command": "hyprctl dispatch exit"
+        },
+        {
+          "label": "",
+          "command": "blueberry"
         }
       ]
     }

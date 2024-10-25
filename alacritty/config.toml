@@ -2,7 +2,7 @@
 padding={x=10,y=10}
 
 [font]
-normal={family="Fira Code", style="Regular"}
+normal={family="JetBrainsMono NF", style="Regular"}
 
 [env]
 TERM="xterm-256color"

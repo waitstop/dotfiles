@@ -1,53 +1,93 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar at the bottom of your screen
-    "margin": "10 15 0 15",
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wireplumber", "bluetooth", "cpu", "memory", "tray", "clock"],
-    "hyprland/workspaces": {
-        "format": "{name}",
-        "format": "{icon}",
-        "tooltip": false,
-        "all-outputs": true,
-        "format-icons": {
-          "active": "",
-          "default": ""
-        }
-    },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
-    "clock": {
-        "format-alt": "{:%Y-%m-%d}"
-    },
-    "cpu": {
-        "format": "{usage}% "
-    },
-    "memory": {
-        "format": "{}% "
-    },
-    "wireplumber": {
-        //"scroll-step": 1,
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "",
-        "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", ""]
-        },
-        "on-click": "pwvucontrol"
-    },
-    "bluetooth": {
-        "format-on": "",
-        "format-disabled": "!",
-        "format-off": "!",
-        "format-connected": "",
-        "on-click": "blueberry"
+  "layer": "top",
+  "position": "top",
+  "margin": "10 15 0 15",
+  "modules-left": [
+    "cpu",
+    "memory"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "hyprland/language",
+    "wireplumber",
+    "bluetooth",
+    "tray",
+    "clock",
+    "custom/notification"
+  ],
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "format": "{icon}",
+    "tooltip": false,
+    "all-outputs": true,
+    "format-icons": {
+      "active": "",
+      "default": ""
     }
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "clock": {
+    "format-alt": "{:%Y-%m-%d}",
+    "tooltip-format": "{calendar}"
+  },
+  "cpu": {
+    "format": "{usage}% "
+  },
+  "memory": {
+    "format": "{}% "
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-ru": "RU"
+  },
+  "wireplumber": {
+    "format": "{icon}   {volume}%",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "on-click": "pwvucontrol"
+  },
+  "bluetooth": {
+    "format-on": "",
+    "format-disabled": "!",
+    "format-off": "!",
+    "format-connected": "",
+    "on-click": "blueberry"
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  }
 }
