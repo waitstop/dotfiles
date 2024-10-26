@@ -35,10 +35,10 @@
     "tooltip-format": "{calendar}"
   },
   "cpu": {
-    "format": "{usage}% "
+    "format": "{usage}%    "
   },
   "memory": {
-    "format": "{}% "
+    "format": "{}%  "
   },
   "hyprland/language": {
     "format": "{}",
