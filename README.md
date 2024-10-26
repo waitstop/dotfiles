@@ -7,5 +7,8 @@ sudo vim /usr/share/wayland-sessions/hyprland.desktop
 `Exec=/home/USER/dotfiles/hypr/start.sh`
 
 # alacritty
-Install zsh, oh-my-posh. Set it default shell
+Install zsh, oh-my-posh
 
+Add plugins folder to zsh/
+
+Download zsh-autosuggestions, zsh-syntax-highlighting
