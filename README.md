@@ -9,5 +9,3 @@ sudo vim /usr/share/wayland-sessions/hyprland.desktop
 # alacritty
 Install zsh, oh-my-posh. Set it default shell
 
-Change path in env variable in zsh/.zshrc
-
