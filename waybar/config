@@ -61,7 +61,7 @@
         ""
       ]
     },
-    "on-click": "pwvucontrol"
+    "on-click": "pavucontrol"
   },
   "bluetooth": {
     "format-on": "",
