@@ -1,5 +1,3 @@
-eval "$(oh-my-posh init zsh --config ~/dotfiles/oh-my-posh/catppuccin_mocha.omp.json)"
-
 HISTFILE=~/.histfile
 HISTSIZE=3000
 SAVEHIST=3000
@@ -12,10 +10,13 @@ compinit
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-# Autosuggestions
+# oh-my-posh init
+eval "$(oh-my-posh init zsh --config ~/dotfiles/oh-my-posh/catppuccin_mocha.omp.json)"
+
+# Plugins
 source ~/dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Syntax highlighting
 source ~/dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/dotfiles/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
+# Zoxide init
 eval "$(zoxide init --cmd cd zsh)"
