@@ -32,7 +32,24 @@
   },
   "clock": {
     "format": "{:%d.%m.%y %H:%M}",
-    "tooltip-format": "{calendar}"
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "on-scroll": 1,
+      "mode-mon-col": 3,
+      "format": {
+        "months": "<span color='#b4befe'>{}</span>",
+        "days": "<span color='#a6adc8'><b>{}</b></span>",
+        "weekdays": "<span color='#cdd6f4'><b>{}</b></span>",
+        "today": "<span color='#cba6f7'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
   },
   "cpu": {
     "format": "{usage}%    "
