@@ -13,7 +13,6 @@
   "modules-right": [
     "hyprland/language",
     "wireplumber",
-    "bluetooth",
     "tray",
     "clock",
     "custom/notification"
