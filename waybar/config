@@ -4,7 +4,8 @@
   "margin": "10 15 0 15",
   "modules-left": [
     "cpu",
-    "memory"
+    "memory",
+    "network"
   ],
   "modules-center": [
     "hyprland/workspaces"
@@ -56,6 +57,13 @@
   },
   "memory": {
     "format": "{}%  "
+  },
+  "network": {
+    "format-ethernet": " {ipaddr}",
+    "format-wifi": "  {bssid}",
+    "format-disconnected": "Disconnected",
+    "format-disabled": "Disabled",
+    "tooltip-format": " {bandwidthUpBytes} /  {bandwidthDownBytes}"
   },
   "hyprland/language": {
     "format": "{}",
