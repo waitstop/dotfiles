@@ -32,3 +32,4 @@ Download zsh-autosuggestions, zsh-syntax-highlighting
 12. zoxide
 13. fzf
 14. nekobox
+15. blueman
