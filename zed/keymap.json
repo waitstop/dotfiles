@@ -1,0 +1,15 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-w": "editor::SelectLargerSyntaxNode",
+      "ctrl-shift-W": "editor::SelectSmallerSyntaxNode"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-w": null
+    }
+  }
+]
