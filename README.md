@@ -1,4 +1,5 @@
 # sddm
+
 Add wayland-session to start hyprland with custom config
 from dotfiles/sddm to /usr/share/wayland-sessions
 
@@ -7,18 +8,24 @@ sudo vim /usr/share/wayland-sessions/hyprland.desktop
 `Exec=/home/USER/dotfiles/hypr/start.sh`
 
 # alacritty
+
 Install zsh, oh-my-posh
 
 Add plugins folder to zsh/
 
 Download zsh-autosuggestions, zsh-syntax-highlighting
 
+# zed
+
+`cd zed`
+
+`./link-settings.sh`
 
 ## deps and tools
 
 1. zsh
-1.1 zsh-autosuggestions
-1.2 zsh-syntax-highlighting
+   1.1 zsh-autosuggestions
+   1.2 zsh-syntax-highlighting
 2. oh-my-posh
 3. pavucontrol
 4. blueberry
