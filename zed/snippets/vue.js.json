@@ -1,0 +1,17 @@
+{
+  "Vue3 TypeScript Setup": {
+    "prefix": "v3ts",
+    "body": [
+      "<template>",
+      "  <div></div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "</script>",
+      "",
+      "<style scoped>",
+      "</style>"
+    ],
+    "description": "Vue3 TypeScript Setup component"
+  }
+}
