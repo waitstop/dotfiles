@@ -7,40 +7,40 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-    "assistant": {
-        "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-5-sonnet-latest"
-        },
-        "version": "2"
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
-    "base_keymap": "JetBrains",
-    "telemetry": {
-        "metrics": false
+    "version": "2"
+  },
+  "base_keymap": "JetBrains",
+  "telemetry": {
+    "metrics": false
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "One Dark"
+  },
+  "terminal": {
+    "shell": {
+      "program": "/bin/zsh"
     },
-    "ui_font_size": 16,
-    "buffer_font_size": 16,
-    "buffer_font_family": "JetBrainsMono Nerd Font",
-    "theme": {
-        "mode": "system",
-        "light": "Catppuccin Mocha",
-        "dark": "One Dark"
+    "env": {
+      "ZDOTDIR": "/home/waitstop/dotfiles/zsh"
     },
-    "terminal": {
-        "shell": {
-            "program": "/bin/zsh"
-        },
-        "env": {
-            "ZDOTDIR": "/home/waitstop/dotfiles/zsh"
-        },
-        "working_directory": "current_project_directory"
-    },
-    "git": {
-        "inline_blame": {
-            "enabled": false
-        }
-    },
-    "format_on_save": "on",
-    "autosave": "on_focus_change",
-    "proxy": "http://127.0.0.1:2080"
+    "working_directory": "current_project_directory"
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "format_on_save": "on",
+  "autosave": "on_focus_change",
+  "proxy": "http://127.0.0.1:2080"
 }
