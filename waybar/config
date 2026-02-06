@@ -12,7 +12,7 @@
   ],
   "modules-right": [
     "hyprland/language",
-    "wireplumber",
+    "pulseaudio",
     "tray",
     "clock",
     "custom/notification"
@@ -52,13 +52,13 @@
     }
   },
   "cpu": {
-    "format": "{usage}%    "
+    "format": " {usage}%"
   },
   "memory": {
-    "format": "{}%  "
+    "format": "  {}%"
   },
   "network": {
-    "format-ethernet": " {ipaddr}",
+    "format-ethernet": "󰩠 {ipaddr}",
     "format-wifi": "  {bssid}",
     "format-disconnected": "Disconnected",
     "format-disabled": "Disabled",
@@ -70,7 +70,7 @@
     "format-ru": "RU",
     "on-click": "hyprctl switchxkblayout current next"
   },
-  "wireplumber": {
+  "pulseaudio": {
     "format": "{icon}   {volume}%",
     "format-bluetooth": "{volume}% {icon}",
     "format-muted": "",
