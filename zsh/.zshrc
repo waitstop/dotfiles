@@ -33,3 +33,15 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export EDITOR=cursor
+export VISUAL=cursor
+
+alias open=dolphin
+
+export LAUNCH_EDITOR=cursor
+
+# PHP
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+alias php=php84
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
